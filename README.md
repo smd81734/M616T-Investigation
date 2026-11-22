@@ -92,7 +92,7 @@ STARTUP provides a custom boot sequence without rebuilding the bootloader. It ca
 
 One could conceive of using this STARTUP variable to override the stock boot script and read a boot command from a USB for example:
 
-```text
+```sh
 export LD_LIBRARY_PATH=/lib:/usr/lib:/home/hybroad/lib
 /home/hybroad/bin/yuxing-utility.elf -env STARTUP \
 'some new startup command' &&
